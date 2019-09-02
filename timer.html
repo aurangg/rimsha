@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Home | Aurang</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    
+    <!-- ##### Header Area End ##### -->
+
+
+
+    <!-- ##### Popular Courses Start ##### -->
+    <section class="popular-courses-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading wow fadeInUp" data-wow-delay="550ms">
+                        <h4 style="color: #e0cf14;animation-delay:2s;">Hi</h4>
+                        <h2 style="color: #e0cf14;font-size:60px;animation-delay:3s;">Happy Birthday<br> Rimsha</h2>
+                        <h2  style="color: #e0cf14;font-size:60px;animation-delay:2s;" id="demo"></h2>
+                        <h4 style="color: #e0cf14;animation-delay:3s;padding-top:100px;">Coming Soon! :)</h4>
+                        <h2 style="color: #e0cf14;font-size:60px;padding-top:60px;">Today, We Celebrate You!</h2>
+                        <h2 style="color: #e0cf14;font-size:60px;"><i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script>
+    // Set the date we're counting down to
+      var countDownDate = new Date("Sept 3, 2019 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML =  hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Cheers to your existence!";
+      }
+      }, 1000);
+
+    </script>
+
+</body>
+
+</html>
